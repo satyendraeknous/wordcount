@@ -1,0 +1,16 @@
+<h1>Counted</h1>
+<p><a href="{% url 'home' %}">Back</a></p>
+
+<h2>Your Text:</h2><br>
+{{data}}
+<h2>Words count:</h2>
+{{listlenght}}
+<br><br><br><br> <br><br>
+
+
+{% for word,value in wordsdic %}
+{{word}} = {{value}}
+<br>
+
+{% endfor %}
+
